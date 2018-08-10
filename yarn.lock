@@ -20,9 +20,9 @@
     mime "^2.3.1"
     moment "^2.22.1"
 
-"@botpress/channel-web@10.28.0":
-  version "10.28.0"
-  resolved "https://registry.yarnpkg.com/@botpress/channel-web/-/channel-web-10.28.0.tgz#a1852a805b769ad6dcd291e1f01ef4bcdfc797c8"
+"@botpress/channel-web@^10.31.0":
+  version "10.31.0"
+  resolved "https://registry.yarnpkg.com/@botpress/channel-web/-/channel-web-10.31.0.tgz#3cc7e94db85f1c91e053bd60c9dcf9d63aa8495d"
   dependencies:
     aws-sdk "^2.108.0"
     axios "^0.16.2"

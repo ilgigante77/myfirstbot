@@ -31,10 +31,24 @@ module.exports = async bp => {
     textColorOnForeground: '#ffffff'
   }
 
+const config = {
+  botName: 'my-first-bot',
+  botAvatarUrl: 'https://gravatar.com/avatar/e45bde24efb3e81107a3efe25c9b24c4',
+  botConvoTitle: 'Botpress Test',
+  botConvoDescription: 'Botpress Test',
+  backgroundColor: '#ffffff',
+  textColorOnBackground: '#666666',
+  foregroundColor: '#000000',
+  textColorOnForeground: '#ffffff',
+  showUserName: false,
+  showUserAvatar: false,
+  enableTranscriptDownload: false
+}
+
   bp.createShortlink('chat', '/lite', {
     m: 'channel-web',
     v: 'fullscreen',
-    options: JSON.stringify({ config: webchat })
+    options: JSON.stringify({ config: config })
   })
 
   bp.logger.info(`------------`)
