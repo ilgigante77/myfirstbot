@@ -1,3 +1,7 @@
+# Botpress Platform Test
+Just a simple test of the https://botpress software.
+
+---------------- BELOW THE ORIGINAL BOTPRESS README ----------------
 ## Run bot
 
 Run `npm start` to start your bot.
