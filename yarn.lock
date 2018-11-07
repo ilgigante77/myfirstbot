@@ -64,19 +64,21 @@
     natural "^0.6.1"
     zscore "^0.1.0"
 
-"@botpress/skill-choice@10.28.0":
-  version "10.28.0"
-  resolved "https://registry.yarnpkg.com/@botpress/skill-choice/-/skill-choice-10.28.0.tgz#426accba48884358b0153f36e3924734abadbdb7"
+"@botpress/skill-choice@^10.50.0":
+  version "10.50.0"
+  resolved "https://registry.yarnpkg.com/@botpress/skill-choice/-/skill-choice-10.50.0.tgz#74f6ca64b5810061d8e9c95cd4a654d301139c99"
+  integrity sha512-LerRgQ/RfTAEJ8H29ELh6Ha8l/xH4xholWWYvz4eioQ1i4s9sNDwR5bxt0Gfrcq2ZPZkvWACsWjQjwH75Dlo/g==
   dependencies:
-    "@botpress/util-sdk" "^10.28.0"
+    "@botpress/util-sdk" "^10.50.0"
 
 "@botpress/util-roles@^10.28.0":
   version "10.28.0"
   resolved "https://registry.yarnpkg.com/@botpress/util-roles/-/util-roles-10.28.0.tgz#f1583ed83cd1b8632b78e4af5a354d0cb2d583e1"
 
-"@botpress/util-sdk@^10.28.0":
-  version "10.28.0"
-  resolved "https://registry.yarnpkg.com/@botpress/util-sdk/-/util-sdk-10.28.0.tgz#958acb8fec7feab6381064c8285f30d84a929bcb"
+"@botpress/util-sdk@^10.50.0":
+  version "10.50.0"
+  resolved "https://registry.yarnpkg.com/@botpress/util-sdk/-/util-sdk-10.50.0.tgz#b61a391b9acc67ce8140d3f593f8a59257631589"
+  integrity sha512-SyuNMYYicNwynMLFGskop+L/QP3W/Z5hjBXp3EgzCpxHBOXYXMkXrB4BEtGbNvnOs3TGheO2rStfIKf5BO69uA==
   dependencies:
     bluebird "^3.5.1"
     joi "^13.3.0"

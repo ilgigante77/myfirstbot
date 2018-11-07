@@ -14,7 +14,10 @@
     {
       "id": "bda0320009",
       "name": "welcome",
-      "onEnter": ["say #!builtin_text-pSsHWg", "getTotalNumberOfConversations {}"],
+      "onEnter": [
+        "say #!builtin_text-pSsHWg",
+        "getTotalNumberOfConversations {}"
+      ],
       "onReceive": null,
       "next": [
         {
@@ -31,14 +34,19 @@
       "id": "7099199f90",
       "name": "first-time",
       "next": [],
-      "onEnter": ["say #!builtin_text-AY5SSW", "say #!builtin_text-X069Le"],
+      "onEnter": [
+        "say #!builtin_text-AY5SSW",
+        "say #!builtin_text-X069Le"
+      ],
       "onReceive": null
     },
     {
       "id": "c69ee2d71f",
       "name": "many-times",
       "next": [],
-      "onEnter": ["say #!builtin_text-bFsOmf"],
+      "onEnter": [
+        "say #!builtin_text-bFsOmf"
+      ],
       "onReceive": null
     },
     {
@@ -48,6 +56,7 @@
       "onEnter": [
         "say #!builtin_text-TtzrCV",
         "resetUserVariable {\"name\":\"nickname\"}",
+        "resetUserVariable {\"name\":\"language\"}",
         "say #!builtin_text-kKQ8C3"
       ],
       "onReceive": null
@@ -55,7 +64,9 @@
     {
       "id": "a54a82eb7c",
       "name": "entry",
-      "onEnter": ["getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"],
+      "onEnter": [
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ],
       "onReceive": null,
       "next": [
         {
@@ -64,7 +75,7 @@
         },
         {
           "condition": "true",
-          "node": "ask-name"
+          "node": "scelta-lingua"
         }
       ]
     },
@@ -77,11 +88,62 @@
           "node": "welcome"
         }
       ],
-      "onEnter": ["say #!builtin_text-z0J9qh"],
+      "onEnter": [
+        "say #!builtin_text-z0J9qh"
+      ],
       "onReceive": [
         "setUserVariable {\"name\":\"nickname\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
         "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
       ]
+    },
+    {
+      "id": "skill-f5192b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "scelta-lingua",
+      "flow": "skills/choice-f5192b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [it]",
+          "condition": "state['skill-choice-ret'] == \"it\"",
+          "node": "lingua-ita"
+        },
+        {
+          "caption": "User picked [en]",
+          "condition": "state['skill-choice-ret'] == \"en\"",
+          "node": "lingua-eng"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "ffa0f4ef62",
+      "name": "lingua-ita",
+      "next": [
+        {
+          "condition": "always",
+          "node": "ask-name"
+        }
+      ],
+      "onEnter": [
+        "setUserVariable {\"name\":\"language\",\"value\":\"it\",\"expiry\":\"never\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "dad2c11c25",
+      "name": "lingua-eng",
+      "next": [
+        {
+          "condition": "always",
+          "node": "ask-name"
+        }
+      ],
+      "onEnter": [
+        "setUserVariable {\"name\":\"language\",\"value\":\"en\",\"expiry\":\"never\"}"
+      ],
+      "onReceive": null
     }
   ]
 }

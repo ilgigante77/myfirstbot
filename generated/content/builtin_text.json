@@ -3,7 +3,10 @@
     "id": "builtin_text-pSsHWg",
     "formData": {
       "text": "👋, {{state.$r}}!",
-      "variations": ["Hello, {{state.$r}}!", "Welcome to Botpress, {{state.$r}}!"],
+      "variations": [
+        "Ciao, {{state.$r}}!",
+        "Benvenuto in Botpress, {{state.$r}}!"
+      ],
       "typing": true
     },
     "createdBy": "admin",
@@ -12,7 +15,7 @@
   {
     "id": "builtin_text-AY5SSW",
     "formData": {
-      "text": "This is the first time we speak 🤖",
+      "text": "Questa è la prima volta che parliamo 🤖",
       "typing": true
     },
     "createdBy": "admin",
@@ -21,7 +24,7 @@
   {
     "id": "builtin_text-bFsOmf",
     "formData": {
-      "text": "We already spoke {{state.$r}} times!",
+      "text": "Abbiamo già parlato {{state.$r}} volte!",
       "typing": true
     },
     "createdBy": "admin",
@@ -30,7 +33,7 @@
   {
     "id": "builtin_text-TtzrCV",
     "formData": {
-      "text": "Alright, I have forgotten your name.",
+      "text": "A posto, ho dimenticato il tuo nome...",
       "typing": true
     },
     "createdBy": "admin",
@@ -39,7 +42,10 @@
   {
     "id": "builtin_text-z0J9qh",
     "formData": {
-      "text": "May I know your name please?",
+      "text": "Posso sapere come ti chiami?",
+      "variations": [
+        "Ciao, come ti chiami?"
+      ],
       "typing": true
     },
     "createdBy": "admin",
@@ -48,7 +54,7 @@
   {
     "id": "builtin_text-X069Le",
     "formData": {
-      "text": "Try saying something like \"forget my name\"!",
+      "text": "Prova a scrivere qualcosa come \"addio\"!",
       "typing": true
     },
     "createdBy": "admin",
@@ -57,7 +63,7 @@
   {
     "id": "builtin_text-kKQ8C3",
     "formData": {
-      "text": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
+      "text": "Ciao ciao!",
       "typing": true
     },
     "createdBy": "admin",

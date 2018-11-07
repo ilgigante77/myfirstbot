@@ -1,0 +1,40 @@
+[
+  {
+    "id": "builtin_single-choice-45EuXk",
+    "formData": {
+      "text": "Quale lingua preferisci",
+      "choices": [
+        {
+          "title": "Italiano",
+          "value": "it"
+        },
+        {
+          "title": "English",
+          "value": "en"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T10:36:26.381Z"
+  },
+  {
+    "id": "builtin_single-choice-fLY6Y2",
+    "formData": {
+      "text": "Quale lingua preferisci",
+      "choices": [
+        {
+          "title": "Italiano",
+          "value": "it"
+        },
+        {
+          "title": "English",
+          "value": "en"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T10:36:26.414Z"
+  }
+]
