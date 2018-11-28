@@ -6,6 +6,14 @@
       {
         "condition": "event.nlu.intent.is('forget')",
         "node": "forget-my-name"
+      },
+      {
+        "condition": "event.nlu.intent.is('pizza')",
+        "node": "pizza"
+      },
+      {
+        "condition": "event.nlu.intent.is('pizza-centro')",
+        "node": "pizza-centro"
       }
     ]
   },
@@ -142,6 +150,24 @@
       ],
       "onEnter": [
         "setUserVariable {\"name\":\"language\",\"value\":\"en\",\"expiry\":\"never\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "6f7229e44f",
+      "name": "pizza",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-5q_SeY"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "fb902151ca",
+      "name": "pizza-centro",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-dlRnPi"
       ],
       "onReceive": null
     }
