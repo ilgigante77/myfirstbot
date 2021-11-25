@@ -15,7 +15,7 @@
     "@botpress/skill-choice": "^10.50.0",
     "botpress": "10.28.0",
     "jsdoc-api": "^4.0.3",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "yn": "^2.0.0"
   },
   "scripts": {
